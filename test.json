@@ -1,0 +1,14 @@
+{
+
+        "ScadaArchive": 
+        {
+            "location": "Scada.Archive//Scada.Archive.exe", 
+            "command": ".VersionInfo.ProductVersion"
+        },
+        "ScadaArchive2": 
+        {
+            "location": "Scada.Archive//Scada.Archive.exe", 
+            "command": ".VersionInfo.ProductVersion"
+        }
+
+}
