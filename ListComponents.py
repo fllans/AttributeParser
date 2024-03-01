@@ -1,7 +1,8 @@
 import json
 
-class Component:
-    def __init__(self, location=None, command=None):
+class Util:
+    def __init__(self, key, location=None, command=None):
+        self.key = key
         self.location = location
         self.command = command
 
@@ -12,11 +13,34 @@ class Component:
 
 # print(js["components"])
 
-with open('E:\\Projects\\TA\\Utils\\AttributeParser\\test.json') as f:
-   data = json.load(f)
+workKey = "-main"
 
-print(data["ScadaArchive2"]["location"])
 
+with open('D:\\Проекты\\AttributeParser\\Components.json') as jsonFile:
+   jsonParse = json.load(jsonFile)
+# print(type(jsonParse))
+# print(jsonParse)
+# print(jsonParse.keys())
+# print(type(jsonParse.keys()))
+# print(*jsonParse)
+
+listUtils = [*jsonParse]
+
+print(listUtils)
+if jsonParse[listUtils[0]]["key"] == workKey:
+    print(jsonParse[listUtils[0]]["location"])
+# print(jsonParse[listComponents[0]][0]["ScadaArchive"]["command"])
+
+
+
+# Comp = Util(**json.loads(jsonFile))
+print(Comp.name)
+
+
+import json
+from types import SimpleNamespace
+
+data = '{"name": "John Smith", "hometown": {"name": "New York", "id": 123}}'
 
 # js3 = '{"ScadaArchive": {"location": "Scada.Archive//Scada.Archive.exe", "command": ".VersionInfo.ProductVersion"}}'
 
@@ -37,16 +61,16 @@ print(data["ScadaArchive2"]["location"])
 
 
 
-# class components:
-#     def __init__(self, name=None, location=None, command=None):
-#         self.name = name
-#         self.location = location
-#         self.command = command
+class components:
+     def __init__(self, name=None, location=None, command=None):
+         self.name = name
+         self.location = location
+         self.command = command
 
 
-# js = '{"name": "ScadaArchive", "location": "Scada.Archive//Scada.Archive.exe", "command": ".VersionInfo.ProductVersion"}'
-# Comp = components(**json.loads(js))
-# print(Comp.name)
+js = '{"name": "ScadaArchive", "location": "Scada.Archive//Scada.Archive.exe", "command": ".VersionInfo.ProductVersion"}'
+Comp = components(**json.loads(js))
+print(Comp.name)
 # js = '{"name": "david", "age": 14, "gender": "male", "language": "English"}'
 # Comp = components(**json.loads(js))
 # print(Comp.location)
