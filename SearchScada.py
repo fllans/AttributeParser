@@ -1,29 +1,29 @@
 import glob
-#qwerty = glob.glob('D:/*/*me*')
-#print(qwerty)
+import re
+from xml.dom.minidom import Document
+import psutil
+import subprocess
 
 
+diskList = psutil.disk_partitions()
+for i in range (len(diskList)):
+    diskList[i] = str(diskList[i]).split(", ")
+    while len(diskList[i]) != 1:
+        diskList[i].pop()
+    diskList[i] = diskList[i][0].replace("sdiskpart(device='", "").replace("\\'", "")
+# print(diskList)
 
-import os
-#import datetime
-#def modification_date(filename):
-#    t = os.path.getmtime(filename)
-#    return datetime.datetime.fromtimestamp(t)
-#print (modification_date("D:/pmsm_ideal.mdl"))
+listOfScada = [0]*len(diskList)
+for i in range(len(diskList)):
+    listOfScada[i] = glob.glob(f'{diskList[i]}*/Scada*Client*')
+    listOfScada[i] = listOfScada[i]
+# print(listOfScada)
 
+scadaList = []
+for i in range(len(listOfScada)):
+    scadaList = scadaList+listOfScada[i]
+# print(scadaList)
 
-
-testpath = input('D:/pmsm_ideal.mdl')
- 
-
-print(os.path.isfile(testpath))
-
-
-import exifread
- 
- 
-def is_lzw(filename):
-    with open(filename, 'rb') as f:
-        return 'LZW' in exifread.process_file(f)['Image Compression'].printable
- 
-print(is_lzw('D:/pmsm_ideal.mdl'))
+for i in range(len(scadaList)):
+    scadaList[i] = scadaList[i].replace("Scada.Client", "")
+print(scadaList)
