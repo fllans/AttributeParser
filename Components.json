@@ -1,192 +1,127 @@
 {
-    "components": [
-      {
-        "ScadaArchive": {
-          "key": "-main",
-          "location": "Scada.Archive//Scada.Archive.exe",
-          "command": ".VersionInfo.ProductVersion"
-        }
-      },
-      {
-        "ScadaClient": {
-          "key": "-main",
-          "location": "Scada.Client//scada.exe",
-          "command": ".VersionInfo.ProductVersion"
-        }
-      },
-      {
-        "ScadaServer": {
-          "key": "-main",
-          "location": "Scada.Server//Scada.Server.exe",
-          "command": ".VersionInfo.ProductVersion"
-        }
-      },
-      {
-        "TeconWebMonitoring": {
-          "key": "-main",
-          "location": "TeconWebMonitoring//Tecon.Presentation.WebService.exe",
-          "command": ".VersionInfo.ProductVersion"
-        }
-      }
-    ],
-    "compilers": [
-      {
-        "CfgMaker": {
-          "key": "-plc",
-          "location": "Compilers//Cpu850Compiler//CfgMaker.exe",
-          "command": ".VersionInfo.ProductVersion"
-        }
-      },
-      {
-        "HornetLauncher": {
-          "key": "-plc",
-          "location": "Compilers//Cpu850Compiler//HornetLauncher.exe",
-          "command": ".VersionInfo.ProductVersion"
-        }
-      },
-      {
-        "ImportZpsClasses": {
-          "key": "-plc",
-          "location": "Compilers//Cpu850Compiler//ImportZpsClasses.exe",
-          "command": ".VersionInfo.ProductVersion"
-        }
-      },
-      {
-        "ZpsParser": {
-          "key": "-plc",
-          "location": "Compilers//Cpu850Compiler//ZpsParser.exe",
-          "command": ".VersionInfo.ProductVersion"
-        }
-      },
-      {
-        "TAVPLCCompiler": {
-          "key": "-plc",
-          "location": "Compilers//TaVplcCompiler//TAVPLCCompiler.exe",
-          "command": ".VersionInfo.ProductVersion"
-        }
-      }
-    ],
-    "vplc": [
-      {
-        "Trainer": {
-          "key": "-vplc",
-          "location": "Scada.VPLC//Trainer//Trainer.exe",
-          "command": ".VersionInfo.ProductVersion"
-        }
-      },
-      {
-        "ManagerServer": {
-          "key": "-vplc",
-          "location": "Scada.VPLC//ManagerServer//Server.exe",
-          "command": ".VersionInfo.ProductVersion"
-        }
-      },
-      {
-        "ManagerVPLC": {
-          "key": "-vplc",
-          "location": "Scada.VPLC//ManagerClient//ManagerVPLC.exe",
-          "command": ".VersionInfo.ProductVersion"
-        }
-      },
-      {
-        "ZpsParser": {
-          "key": "-vplc",
-          "location": "Compilers//Cpu850Compiler//ZpsParser.exe",
-          "command": ".VersionInfo.ProductVersion"
-        }
-      }
-    ],
-    "utils": [
-      {
-        "ExcelImportExport": {
-          "key": "-utils",
-          "location": "Utils//ExcelImportExport//ExcelImportExport.exe",
-          "command": ".VersionInfo.ProductVersion"
-        }
-      },
-      {
-        "GWE2Ex": {
-          "key": "-utils",
-          "location": "Utils//GWE2Ex//GWE2Ex.exe",
-          "command": ".VersionInfo.ProductVersion"
-        }
-      },
-      {
-        "slave_104": {
-          "key": "-utils",
-          "location": "Utils//IEC104slave//x64//slave_104.exe",
-          "command": ".VersionInfo.ProductVersion"
-        }
-      },
-      {
-        "ModbusTcpSlave": {
-          "key": "-utils",
-          "location": "Utils//ModbusTcpSlave//ModbusTcpSlave.exe",
-          "command": ".VersionInfo.ProductVersion"
-        }
-      },
-      {
-        "Archive.Player": {
-          "key": "-utils",
-          "location": "Utils//Scada.Archive.Player//Archive.Player//Archive.Player.exe",
-          "command": ".VersionInfo.ProductVersion"
-        }
-      },
-      {
-        "Archive.Player.Server": {
-          "key": "-utils",
-          "location": "Utils//Scada.Archive.Player//Archive.Player.Server//Archive.Player.Server.exe",
-          "command": ".VersionInfo.ProductVersion"
-        }
-      },
-      {
-        "Scada.Monitor.Client": {
-          "key": "-utils",
-          "location": "Utils//Scada.Monitor//Scada.Monitor.Client//Scada.Monitor.Client.exe",
-          "command": ".VersionInfo.ProductVersion"
-        }
-      },
-      {
-        "Scada.Monitor.Server": {
-          "key": "-utils",
-          "location": "Utils//Scada.Monitor//Scada.Monitor.Server//Scada.Monitor.Server.exe",
-          "command": ".VersionInfo.ProductVersion"
-        }
-      },
-      {
-        "Scada.Opc.TagsSigner": {
-          "key": "-utils",
-          "location": "Utils//Scada.Opc.TagsSigner//Scada.Opc.TagsSigner.exe",
-          "command": ".VersionInfo.ProductVersion"
-        }
-      },
-      {
-        "Scada.Opc.TcpProxy": {
-          "key": "-utils",
-          "location": "Utils//Scada.Opc.TcpProxy//Scada.Opc.TcpProxy.exe",
-          "command": ".VersionInfo.ProductVersion"
-        }
-      },
-      {
-        "Scada.Server.DataMirror": {
-          "key": "-utils",
-          "location": "Utils//Scada.Server.DataMirror//Scada.Server.DataMirror.exe",
-          "command": ".VersionInfo.ProductVersion"
-        }
-      },
-      {
-        "SiriusCompiler": {
-          "key": "-utils",
-          "location": "Utils//SiriusCompiler//SiriusCompiler.exe",
-          "command": ".VersionInfo.ProductVersion"
-        }
-      },
-      {
-        "UpsServer": {
-          "key": "-utils",
-          "location": "Utils//UpsServer//StandartUpsManager.exe",
-          "command": ".VersionInfo.ProductVersion"
-        }
-      }
-    ]
+  "ScadaArchive": {
+    "key": "-main",
+    "location": "Scada.Archive//Scada.Archive.exe",
+    "command": ".VersionInfo.ProductVersion"
+  },
+  "ScadaClient": {
+    "key": "-main",
+    "location": "Scada.Client//scada.exe",
+    "command": ".VersionInfo.ProductVersion"
+  },
+  "ScadaServer": {
+    "key": "-main",
+    "location": "Scada.Server//Scada.Server.exe",
+    "command": ".VersionInfo.ProductVersion"
+  },
+  "TeconWebMonitoring": {
+    "key": "-other",
+    "location": "TeconWebMonitoring//Tecon.Presentation.WebService.exe",
+    "command": ".VersionInfo.ProductVersion"
+  },
+  "CfgMaker": {
+    "key": "-plc",
+    "location": "Compilers//Cpu850Compiler//CfgMaker.exe",
+    "command": ".VersionInfo.ProductVersion"
+  },
+  "HornetLauncher": {
+    "key": "-plc",
+    "location": "Compilers//Cpu850Compiler//HornetLauncher.exe",
+    "command": ".VersionInfo.ProductVersion"
+  },
+  "ImportZpsClasses": {
+    "key": "-plc",
+    "location": "Compilers//Cpu850Compiler//ImportZpsClasses.exe",
+    "command": ".VersionInfo.ProductVersion"
+  },
+  "ZpsParser": {
+    "key": "-vplc",
+    "location": "Compilers//Cpu850Compiler//ZpsParser.exe",
+    "command": ".VersionInfo.ProductVersion"
+  },
+  "TAVPLCCompiler": {
+    "key": "-plc",
+    "location": "Compilers//TaVplcCompiler//TAVPLCCompiler.exe",
+    "command": ".VersionInfo.ProductVersion"
+  },
+  "Trainer": {
+    "key": "-vplc",
+    "location": "Scada.VPLC//Trainer//Trainer.exe",
+    "command": ".VersionInfo.ProductVersion"
+  },
+  "ManagerServer": {
+    "key": "-vplc",
+    "location": "Scada.VPLC//ManagerServer//Server.exe",
+    "command": ".VersionInfo.ProductVersion"
+  },
+  "ManagerVPLC": {
+    "key": "-vplc",
+    "location": "Scada.VPLC//ManagerClient//ManagerVPLC.exe",
+    "command": ".VersionInfo.ProductVersion"
+  },
+  "ExcelImportExport": {
+    "key": "-utils",
+    "location": "Utils//ExcelImportExport//ExcelImportExport.exe",
+    "command": ".VersionInfo.ProductVersion"
+  },
+  "GWE2Ex": {
+    "key": "-utils",
+    "location": "Utils//GWE2Ex//GWE2Ex.exe",
+    "command": ".VersionInfo.ProductVersion"
+  },
+  "slave_104": {
+    "key": "-utils",
+    "location": "Utils//IEC104slave//x64//slave_104.exe",
+    "command": ".VersionInfo.ProductVersion"
+  },
+  "ModbusTcpSlave": {
+    "key": "-utils",
+    "location": "Utils//ModbusTcpSlave//ModbusTcpSlave.exe",
+    "command": ".VersionInfo.ProductVersion"
+  },
+  "Archive.Player": {
+    "key": "-utils",
+    "location": "Utils//Scada.Archive.Player//Archive.Player//Archive.Player.exe",
+    "command": ".VersionInfo.ProductVersion"
+  },
+  "Archive.Player.Server": {
+    "key": "-utils",
+    "location": "Utils//Scada.Archive.Player//Archive.Player.Server//Archive.Player.Server.exe",
+    "command": ".VersionInfo.ProductVersion"
+  },
+  "Scada.Monitor.Client": {
+    "key": "-utils",
+    "location": "Utils//Scada.Monitor//Scada.Monitor.Client//Scada.Monitor.Client.exe",
+    "command": ".VersionInfo.ProductVersion"
+  },
+  "Scada.Monitor.Server": {
+    "key": "-utils",
+    "location": "Utils//Scada.Monitor//Scada.Monitor.Server//Scada.Monitor.Server.exe",
+    "command": ".VersionInfo.ProductVersion"
+  },
+  "Scada.Opc.TagsSigner": {
+    "key": "-utils",
+    "location": "Utils//Scada.Opc.TagsSigner//Scada.Opc.TagsSigner.exe",
+    "command": ".VersionInfo.ProductVersion"
+  },
+  "Scada.Opc.TcpProxy": {
+    "key": "-utils",
+    "location": "Utils//Scada.Opc.TcpProxy//Scada.Opc.TcpProxy.exe",
+    "command": ".VersionInfo.ProductVersion"
+  },
+  "Scada.Server.DataMirror": {
+    "key": "-utils",
+    "location": "Utils//Scada.Server.DataMirror//Scada.Server.DataMirror.exe",
+    "command": ".VersionInfo.ProductVersion"
+  },
+  "SiriusCompiler": {
+    "key": "-utils",
+    "location": "Utils//SiriusCompiler//SiriusCompiler.exe",
+    "command": ".VersionInfo.ProductVersion"
+  },
+  "UpsServer": {
+    "key": "-utils",
+    "location": "Utils//UpsServer//StandartUpsManager.exe",
+    "command": ".VersionInfo.ProductVersion"
   }
+}
