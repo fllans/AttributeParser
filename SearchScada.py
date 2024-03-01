@@ -1,6 +1,4 @@
 import glob
-import re
-from xml.dom.minidom import Document
 import psutil
 
 
