@@ -1,7 +1,10 @@
 import subprocess
+import SearchScada
 
+print(SearchScada.scadaList[0])
 
 # COMPILERS
+compilersComponents = []
 CfgMaker = subprocess.run(['powershell.exe', r'(Get-Item D:\_Scada_210\Compilers\Cpu850Compiler\CfgMaker.exe).VersionInfo.ProductVersion'], capture_output=True)
 HornetLauncher = subprocess.run(['powershell.exe', r'(Get-Item D:\_Scada_210\Compilers\Cpu850Compiler\HornetLauncher.exe).VersionInfo.ProductVersion'], capture_output=True)
 ImportZpsClasses = subprocess.run(['powershell.exe', r'(Get-Item D:\_Scada_210\Compilers\Cpu850Compiler\ImportZpsClasses.exe).VersionInfo.ProductVersion'], capture_output=True)
