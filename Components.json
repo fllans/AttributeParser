@@ -19,6 +19,11 @@
     "location": "TeconWebMonitoring//Tecon.Presentation.WebService.exe",
     "command": ".VersionInfo.ProductVersion"
   },
+  "xBuilder": {
+    "key": "-plc",
+    "location": "Compilers//Cpu850Compiler//xBuilderflkgdfgjdfgk",
+    "command": null
+  },
   "CfgMaker": {
     "key": "-plc",
     "location": "Compilers//Cpu850Compiler//CfgMaker.exe",
